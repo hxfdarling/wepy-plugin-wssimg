@@ -17,14 +17,14 @@ export default function image(options = {}) {
   return {
     name: 'image',
 
-    load(id) {
-      if (!filter(id)) return null;
+    load(file) {
+      if (!filter(file)) return null;
 
-      const mime = mimeTypes[extname(id)];
+      const mime = mimeTypes[extname(file)];
       // not an image
       if (!mime) return null;
 
-      const data = readFileSync(id, 'base64');
+      const data = readFileSync(file, 'base64');
       const code = `var img = 'data:${mime};base64,${data}'; export default img;`;
 
       const ast = {

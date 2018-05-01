@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "min programe image Loader",
   "license": "MIT",
-  "main": "dist/cjs.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
@@ -66,6 +66,7 @@
     "nsp": "^3.1.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.9.2",
+    "rollup": "^0.58.2",
     "standard-version": "^4.2.0",
     "webpack": "^4.0.0",
     "webpack-defaults": "^2.0.0-rc.2"
